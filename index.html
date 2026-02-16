@@ -305,6 +305,14 @@
       font-size: 0.8rem;
     }
 
+    .hit-counter {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
     .lang {
       display: none;
     }
@@ -999,9 +1007,6 @@
   </div>
 
   <script>
-    const hitUrl = '/api/counter?increment=1';
-    fetch(hitUrl).catch(() => {});
-
     const toggleButtons = document.querySelectorAll('.lang-toggle button');
     const langBlocks = document.querySelectorAll('.lang');
 
@@ -1019,6 +1024,12 @@
       btn.addEventListener('click', () => setLang(btn.dataset.lang));
     });
   </script>
+  <img
+    class="hit-counter"
+    alt=""
+    aria-hidden="true"
+    src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fan-lise-comparativa-de-modelos-de-linguagem-de-o1wfrfkv8.vercel.app%2F&count_bg=%2338F2C9&title_bg=%23101623&icon=&icon_color=%23E7EEF7&title=views&edge_flat=false"
+  />
 </body>
 </html>
 
