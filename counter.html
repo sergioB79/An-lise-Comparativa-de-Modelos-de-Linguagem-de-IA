@@ -23,7 +23,7 @@
 <body>
   <div class="count" id="count">...</div>
   <script>
-    const counterUrl = 'https://api.countapi.xyz/get/ai-comparison-study/visits';
+    const counterUrl = '/api/counter?increment=0';
     fetch(counterUrl)
       .then((res) => res.json())
       .then((data) => {
