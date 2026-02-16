@@ -999,6 +999,9 @@
   </div>
 
   <script>
+    const hitUrl = 'https://api.countapi.xyz/hit/ai-comparison-study/visits';
+    fetch(hitUrl).catch(() => {});
+
     const toggleButtons = document.querySelectorAll('.lang-toggle button');
     const langBlocks = document.querySelectorAll('.lang');
 
